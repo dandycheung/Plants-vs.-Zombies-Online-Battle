@@ -4,10 +4,10 @@
 #include "net_packet.h"
 #include "state.h"
 
-#include "listener.h"
-#include "memory.h"
-#include "packet.h"
-#include "socket/tcp.h"
+#include "system/memory.h"
+#include "network/listener.h"
+#include "network/packet.h"
+#include "network/socket/tcp.h"
 
 #include <cassert>
 #include <exception>

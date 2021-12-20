@@ -14,8 +14,8 @@
 
 #define _WINSOCKAPI_
 
-#include "config.h"
-#include "startup.h"
+#include "game/config.h"
+#include "game/startup.h"
 
 #include <Windows.h>
 
@@ -30,7 +30,7 @@ using namespace game;
 
 namespace {
 
-constexpr std::string_view CFG_FILE = "online_config.ini";
+constexpr std::string_view CFG_FILE{ "online_config.ini" };
 
 extern std::unique_ptr<Startup> startup;
 

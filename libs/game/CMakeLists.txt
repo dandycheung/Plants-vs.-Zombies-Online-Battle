@@ -2,8 +2,9 @@ add_library(game "")
 # target_compile_definitions(game PRIVATE INET6=1)
 
 set(HEADER_PATH ${PROJECT_SOURCE_DIR}/include/game)
-target_include_directories(game PUBLIC ${HEADER_PATH})
+target_include_directories(game PRIVATE ${HEADER_PATH})
 target_include_directories(game PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(game PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 target_sources(game
     PUBLIC
